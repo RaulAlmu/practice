@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konstruct</title>
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__info">
+        <img
+          src="./image/logo-white.png"
+          alt="Konstruct logo"
+          class="header__image"
+          width="102"
+          height="23"
+          loading="lazy"
+        />
+        <div class="header__title">
+          <h1>PARTNER WITH KONSTUCT</h1>
+          <p>An award-winning construction management firm</p>
+        </div>
+        <a class="header__button" href="#nav-bar">SCROLL DOWN</a>
+      </div>
+      <div class="header__navigation-bar container" id="nav-bar">
+        <div class="navigation-bar">
+          <a href="/" class="navigation-bar__logo-link">
+            <img
+              src="./image/logo-black.png"
+              alt="Konstruct logo"
+              class="navigation-bar__logo"
+              width="80"
+              height="18"
+              loading="lazy"
+            />
+          </a>
+
+          <ul class="navigation-bar__list">
+            <li class="navigation-bar__item">
+              <a href="/" class="navigation-bar__link">HOME</a>
+            </li>
+            <li class="navigation-bar__item">
+              <a href="/" class="navigation-bar__link is-active">ABOUT</a>
+            </li>
+            <li class="navigation-bar__item">
+              <a href="/" class="navigation-bar__link">SERVICES</a>
+            </li>
+            <li class="navigation-bar__item">
+              <a href="/" class="navigation-bar__link">WORK</a>
+            </li>
+            <li class="navigation-bar__item">
+              <a href="/" class="navigation-bar__link">CONTACT</a>
+            </li>
+          </ul>
+
+          <button
+            class="header__burger-button burger-button visible-mobile"
+            type="button"
+            onclick="mobileOverlay.showModal()"
+          >
+            <span class="visually-hidden">Open navigation menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__company-story company-story container" id="story">
+        <h2>Our story</h2>
+        <div class="company-story__wrapper">
+          <div class="company-story__info">
+            <h3 class="company-story__title">
+              Founded in 2011 by John Mathew Smith, <span>Konstruct</span> has
+              become the number one construction management firm
+            </h3>
+            <p class="company-story__descreiption">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat.
+            </p>
+          </div>
+          <div class="company-story__tiles">
+            <div class="company-story__item">
+              <p>We plan</p>
+            </div>
+            <div class="company-story__item">
+              <p>We manage</p>
+            </div>
+            <div class="company-story__item">
+              <p>We build</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__capabiliies capabilities container">
+        <div class="capabilities__header">
+          <h2 class="capabilities__title">Our capabilities</h2>
+          <div class="capabilities__inner">
+            <p class="capabilities__description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat.
+            </p>
+            <a href="/" class="capabilities__link button">ALL SERVICES</a>
+          </div>
+        </div>
+        <div class="capabilities__cards">
+          <div class="capabilities__item item">
+            <img
+              src="./image/capabilities/1.png"
+              alt=""
+              width="66"
+              height="75"
+              loading="lazy"
+            />
+            <h3 class="item__title">PROJECT AND CONSTRUCTION MANAGEMENT</h3>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat.
+            </p>
+          </div>
+          <div class="capabilities__item item">
+            <img
+              src="./image/capabilities/2.png"
+              alt=""
+              width="68"
+              height="75"
+              loading="lazy"
+            />
+            <h3 class="item__title">STRUCTURE AUDIT AND MAINTENANCE</h3>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat.
+            </p>
+          </div>
+          <div class="capabilities__item item">
+            <img
+              src="./image/capabilities/3.png"
+              alt=""
+              width="71"
+              height="75"
+              loading="lazy"
+            />
+            <h3 class="item__title">FACTORY CONSTRUCTION AND MODELING</h3>
+            <p class="item__description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__banner banner">
+        <h2 class="banner__title">Want to build something amazing?</h2>
+        <button class="banner__button button" type="submit">
+          GET IN TOUCH
+        </button>
+      </section>
+
+      <section class="main__sign-up sign-up">
+        <h2 class="sign-up__title">Newsletter Signup</h2>
+        <form class="sign-up__inner" action="" method="get">
+          <input
+            type="email"
+            class="sign-up__input"
+            name="email"
+            id="email"
+            placeholder=" "
+            required
+          />
+          <label for="email" class="sign-up__label">test@youremail.com</label>
+          <button type="submit" class="sign-up__button button">SIGNUP</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__main-inner container">
+          <div class="footer__block">
+            <h3 class="footer__title">Company</h3>
+            <div class="footer__info">
+              <a href="/" class="footer__logo-link">
+                <img
+                  src="./image/logo-white.png"
+                  alt="Konstruct logo"
+                  width="102"
+                  height="23"
+                  loading="lazy"
+                />
+              </a>
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat.
+              </p>
+            </div>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Links</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="/" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Terms</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Partners</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Services</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">News</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Projects</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Contact us</h3>
+            <address class="footer__contacts">
+              <p>213 Baker Street Oriel City Kounty 7000 KNW, Kountry Name</p>
+              <a class="footer__contact-link" href="tel:+23994233402"
+                >+23 994 233 402</a
+              >
+              <a class="footer__contact-link" href="mailto:info@konstruct.com"
+                >info@konstruct.com</a
+              >
+            </address>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title visually-hidden">Soc1als</h3>
+            <a href="/" class="footer__soc1als-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                viewBox="0 0 800 800"
+                width="16"
+                height="16"
+              >
+                <path
+                  fill="#fff"
+                  class="st0"
+                  d="M167.2,139.8h460.9c15.6,0,29.7,14.1,29.7,29.7v460.9c0,15.6-14.1,29.7-29.7,29.7H167.2c-15.6,0-29.7-14.1-29.7-29.7V169.5c0-15.6,14.1-29.7,29.7-29.7ZM507,432h71.9l3.1-68.8h-75v-50.8c0-19.5,3.9-30.5,28.9-30.5h43.8l1.6-64.1s-19.5-3.1-47.7-3.1c-68.8,0-99.2,43-99.2,89.1v59.4h-50.8v68.8h50.8v190.6h72.7v-190.6Z"
+                />
+              </svg>
+            </a>
+            <a href="/" class="footer__soc1als-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 800 800"
+                width="14"
+                height="14"
+              >
+                <path
+                  fill="#fff"
+                  id="twitter-_x5B__x23_154_x5D_"
+                  class="st0"
+                  d="M251.6,720c301.9,0,467-246.2,467-459.8s0-14-.5-20.9c32.1-22.9,59.8-51.2,81.9-83.7-29.9,13.1-61.7,21.7-94.2,25.4,34.2-20.2,59.9-51.9,72.2-89.4-32.2,18.8-67.5,32.1-104.2,39.2-62.2-65.1-166.1-68.2-232.2-7-42.6,39.5-60.7,98.3-47.5,154.4-132-6.5-254.9-67.9-338.3-168.8-43.6,73.8-21.3,168.3,50.8,215.7-26.1-.7-51.7-7.7-74.5-20.2v2.1c0,76.9,55.1,143.1,131.7,158.4-24.2,6.5-49.5,7.4-74.1,2.8,21.5,65.9,83.1,111,153.3,112.2-58.1,45-129.9,69.4-203.8,69.3-13,0-26.1-.8-39.1-2.3,75.1,47.4,162.4,72.6,251.6,72.5"
+                />
+              </svg>
+            </a>
+            <a href="/" class="footer__soc1als-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 800 800"
+                width="14"
+                height="14"
+              >
+                <path
+                  fill="#fff"
+                  id="google-_x5B__x23_178_x5D_"
+                  class="st0"
+                  d="M792.9,320.2h-384.4c0,40,0,119.9-.2,159.9h222.8c-8.5,40-38.8,96-81.6,124.1,0,0,0,.2-.2.2-56.9,37.5-131.9,46.1-187.6,34.9-87.3-17.3-156.4-80.7-184.5-161.1.2-.1.3-1.2.4-1.3-17.6-49.9-17.6-116.7,0-156.7h0c22.6-73.5,93.8-140.5,181.3-158.9,70.3-14.9,149.7,1.2,208.1,55.8,7.8-7.6,107.4-104.9,114.9-112.8C482.3-76.3,163.1-12.7,43.6,220.4h0s0,0-.2.4h0c-59.1,114.5-56.6,249.5.4,358.6-.2.1-.3.2-.4.3,51.7,100.4,145.8,177.3,259.2,206.6,120.4,31.6,273.7,10,376.4-82.9,0,0,0,0,.1.1,87-78.4,141.2-211.8,113.8-383.5"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__extra">
+        <p class="footer__extra-copyright">
+          © 2017 Konstruct Inc. Designed by Jane Kathryn Teo
+        </p>
+      </div>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">HOME</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">ABOUT</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">SERVICES</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">WORK</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="/" class="mobile-overlay__link">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>

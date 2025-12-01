@@ -1,0 +1,22 @@
+@use "./normalize";
+@use "./fonts";
+@use "./variables";
+@use "./globals";
+
+@use "./blocks/button";
+@use "./blocks/burger-button";
+@use "./blocks/cross-button";
+@use "./blocks/mobile-overlay";
+
+
+@use "./blocks/header";
+@use "./blocks/navigation-bar";
+@use "./blocks/company-story";
+@use "./blocks/capabilities";
+@use "./blocks/capabilities-item";
+@use "./blocks/banner";
+@use "./blocks/sign-up";
+@use "./blocks/footer-main";
+@use "./blocks/footer-extra";
+
+

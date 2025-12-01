@@ -1,0 +1,139 @@
+.footer {
+  &__main {
+    background-color: var(--color-black-alt);
+    color: var(--color-light);
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 40px;
+      padding-block: 40px;
+
+      @media screen and (max-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+
+      @media screen and (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-size: 11px;
+
+    @media screen and (max-width: 425px) {
+      align-items: center;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &:first-child {
+      max-width: 250px;
+
+      @media screen and (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    &:nth-child(2) {
+      max-width: 262px;
+    }
+
+    &:nth-child(3) {
+      max-width: 130px;
+
+      @media screen and (max-width: 768px) {
+        max-width: none;
+      }
+
+      @media screen and (max-width: 425px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: none;
+
+        .footer__contacts {
+          text-align: center;
+
+          .footer__contact-link {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      max-width: 100px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 8px;
+    }
+  }
+
+  &__title {
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: var(--font-family-base);
+    letter-spacing: 0.85px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    @media screen and (max-width: 425px) {
+      align-items: center;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 34px;
+    row-gap: 8px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__soc1als-link {
+    padding: 6px;
+  }
+
+  &__link,
+  &__soc1als-link,
+  &__contact-link,
+  &__logo-link {
+    text-decoration: none;
+    color: var(--color-light);
+  }
+}

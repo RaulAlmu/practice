@@ -1,0 +1,9 @@
+.footer {
+  &__extra {
+    padding: 22px;
+    background-color: var(--color-black);
+    color: var(--color-light);
+    text-align: center;
+    font-size: 11px;
+  }
+}

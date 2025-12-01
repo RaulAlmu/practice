@@ -1,0 +1,15 @@
+.button {
+    padding: 12px 48px;
+    background-color: var(--color-accent);
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-light);
+    max-height: 43px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition-duration: var(--transition-duration);
+    }
+    
+}

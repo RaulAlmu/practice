@@ -1,0 +1,40 @@
+.burger-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  aspect-ratio: 1;
+  border-radius: 2px;
+
+  position: relative;
+
+  @media screen and (min-width: 769px) {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 2px;
+    background-color: var(--color-black);
+    border-radius: 5px;
+    box-shadow: 0 -8px 0 var(--color-black), 0 8px 0 var(--color-black);
+  }
+
+  &:hover {
+    background-color: var(--color-accent);
+
+    &::after {
+      background-color: var(--color-light);
+      box-shadow: 0 -8px 0 var(--color-light), 0 8px 0 var(--color-light);
+    }
+  }
+}

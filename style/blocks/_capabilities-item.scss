@@ -1,0 +1,22 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 295px;
+  padding: 38px 22px;
+  border: var(--border);
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 13px;
+  }
+}

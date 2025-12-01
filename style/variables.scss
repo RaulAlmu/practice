@@ -1,0 +1,19 @@
+:root {
+  --color-light: #fff;
+  --color-dark: #48555b;
+  --color-accent: #00a4e5;
+  --color-gray: #e6e6e6;
+  --color-gray-alt: #979797;
+  --color-black: #171819;
+  --color-black-alt: #141a20;
+
+  --border: 1px solid var(--color-gray);
+  --border-alt: 1px solid var(--color-gray-alt);
+
+  --font-family-base: "Open Sans", sans-serif;
+  --font-family-accent: "Bebas Neue", sans-serif;
+
+  --container-width: 940px;
+
+  --transition-duration: 0.2s;
+}

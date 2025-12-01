@@ -1,0 +1,54 @@
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 86px;
+  background-color: var(--color-black);
+  padding-block: 30px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  &__title {
+    color: var(--color-light);
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease;
+  }
+
+  &__input {
+    padding-block: 10px;
+    padding-left: 16px;
+    font-size: 14px;
+    min-width: 250px;
+    border: var(--border);
+
+    @media screen and (max-width: 768px) {
+      min-width: 200px;
+    }
+
+    &:focus + label,
+    &:not(:placeholder-shown) + label {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

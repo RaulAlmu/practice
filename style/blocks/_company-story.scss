@@ -1,0 +1,138 @@
+.company-story {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  padding-block: 60px;
+
+  @media screen and (max-width: 1024px) {
+    row-gap: 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    row-gap: 20px;
+  }
+
+  & h2 {
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2.3px;
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 30%;
+      bottom: -10px;
+      width: 50px;
+      height: 2px;
+      background-color: var(--color-accent);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    column-gap: 77px;
+    justify-content: center;
+    align-items: end;
+
+    @media screen and (max-width: 1280px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 28px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    max-width: 405px;
+    font-size: 20px;
+    font-weight: 700;
+
+    @media screen and (max-width: 1280px) {
+      max-width: 640px;
+      text-align: center;
+      align-self: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 480px;
+      text-align: center;
+    }
+
+    & span {
+      color: var(--color-accent);
+    }
+  }
+
+  &__descreiption {
+    margin-top: 30px;
+    max-width: 405px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8;
+
+    @media screen and (max-width: 1280px) {
+      margin-top: 20px;
+      max-width: 640px;
+      text-align: center;
+    }
+  }
+
+  &__tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+
+    @media screen and (max-width: 425px) {
+      column-gap: 20px;
+    }
+  }
+
+  &__item {
+    width: 140px;
+    height: 224px;
+    padding: 15px;
+
+    @media screen and (max-width: 425px) {
+      width: 120px;
+      height: 200px;
+      padding: 10px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      transition-duration: var(--transition-duration);
+    }
+
+    & p {
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--color-light);
+
+      @media screen and (max-width: 425px) {
+        font-size: 20px;
+      }
+    }
+
+    &:first-child {
+      background: url("../../image/story/bg-story-1.jpg") no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+    }
+
+    &:nth-child(2) {
+      background: url("../../image/story/bg-story-2.jpg") center/cover no-repeat;
+    }
+
+    &:last-child {
+      background: url("../../image/story/bg-story-3.jpg") center/cover no-repeat;
+    }
+  }
+}
